@@ -129,9 +129,9 @@ cmp.setup({
 			vim_item.kind = kind_icons[vim_item.kind]
       -- the string that shows up in the menu section
 			vim_item.menu = ({
+				luasnip = "luasnip",
 				nvim_lsp = "lsp",
 				nvim_lua = "nvim-lua",
-				luasnip = "luasnip",
 				buffer = "buffer",
 				path = "path",
 				emoji = "",
@@ -142,9 +142,9 @@ cmp.setup({
 
   -- this is order of precedence for the completion menu
 	sources = {
+		{ name = "luasnip" },
 		{ name = "nvim_lsp" },
 		{ name = "nvim_lua" },
-		{ name = "luasnip" },
 		{ name = "buffer" },
 		{ name = "path" },
 	},
