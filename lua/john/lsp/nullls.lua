@@ -11,9 +11,9 @@ null_ls.setup({
   -- can execute the intended binary for each source if you
   -- want null_ls to 
   sources = {
-    null_ls.builtins.formatting.erb_lint,
+    -- null_ls.builtins.formatting.erb_lint,
     -- null_ls.builtins.formatting.erb_lint.with({extra_args = { "--the-args" }})
-    null_ls.builtins.diagnostics.erb_lint,
+    -- null_ls.builtins.diagnostics.erb_lint,
     null_ls.builtins.formatting.rubocop,
     null_ls.builtins.diagnostics.rubocop,
     null_ls.builtins.formatting.prettier,
