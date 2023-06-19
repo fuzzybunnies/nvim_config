@@ -56,10 +56,10 @@ return packer.startup(function(use)
   use { "nvim-lualine/lualine.nvim",
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
-  use { "akinsho/toggleterm.nvim" }
+
+
   -- use { "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" }
   -- use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
-  use { "lukas-reineke/indent-blankline.nvim" }
   -- use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
   -- -- Colorschemes
   -- use { "folke/tokyonight.nvim" }
@@ -100,6 +100,14 @@ return packer.startup(function(use)
   -- use { "mfussenegger/nvim-dap", commit = "6b12294a57001d994022df8acbe2ef7327d30587" }
   -- use { "rcarriga/nvim-dap-ui", commit = "1cd4764221c91686dcf4d6b62d7a7b2d112e0b13" }
   -- use { "ravenxrz/DAPInstall.nvim", commit = "8798b4c36d33723e7bba6ed6e2c202f84bb300de" }
+
+
+
+
+  -- added by me
+  use { "akinsho/toggleterm.nvim" }
+  use { "lukas-reineke/indent-blankline.nvim" }
+  use { "Shatur/neovim-session-manager" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
