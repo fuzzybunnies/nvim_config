@@ -64,5 +64,8 @@ require('lualine').setup{
     options = {
       -- theme = 'powerline_dark',
       theme = M,
+    },
+    sections = {
+      lualine_c = {{ 'filename', path=2 }}
     }
   }
