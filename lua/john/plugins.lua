@@ -56,7 +56,7 @@ return packer.startup(function(use)
   --
   -- use { "windwp/nvim-autopairs" }  -- Autopairs, integrates with both cmp and treesitter
   -- -- use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "32d9627123321db65a4f158b72b757bcaef1a3f4" }
-  -- use { "kyazdani42/nvim-web-devicons" }
+  use { "kyazdani42/nvim-web-devicons" }
   -- -- use { "akinsho/bufferline.nvim", commit = "83bf4dc7bff642e145c8b4547aa596803a8b4dc4" }
   -- -- use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
   -- use { "nvim-lualine/lualine.nvim",
@@ -70,7 +70,7 @@ return packer.startup(function(use)
   -- -- -- Colorschemes
   -- -- use { "folke/tokyonight.nvim" }
   -- -- use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
-  -- use 'navarasu/onedark.nvim'
+  use 'navarasu/onedark.nvim'
 
   -- -- -- cmp plugins
   -- use { "hrsh7th/nvim-cmp" }         -- The completion plugin
@@ -102,7 +102,7 @@ return packer.startup(function(use)
   }
 
   -- -- -- Git
-  -- use { "lewis6991/gitsigns.nvim" }
+  use { "lewis6991/gitsigns.nvim" }
 
   -- -- -- DAP
   -- -- use { "mfussenegger/nvim-dap", commit = "6b12294a57001d994022df8acbe2ef7327d30587" }
@@ -113,7 +113,7 @@ return packer.startup(function(use)
 
 
   -- -- added by me
-  -- use { "akinsho/toggleterm.nvim" }
+  use { "akinsho/toggleterm.nvim" }
   -- use { "lukas-reineke/indent-blankline.nvim" }
   -- use { "Shatur/neovim-session-manager" }
 
