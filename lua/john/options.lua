@@ -6,6 +6,16 @@ vim.opt.numberwidth = 4			        -- width of the line number column
 
 
 
+-- this is the time ms to wait before CursorHold and CursorHoldI fire
+vim.opt.updatetime = 300
+-- Trigger to check for file changes outside of neovim
+-- When nvim gets focus, when a buffer is entered, or one of the CursorHold's fire
+vim.api.nvim_create_autocmd({'FocusGained', 'BufEnter', 'CursorHold', 'CursorHoldI'}, {
+  pattern = '*',
+  command = "if mode() !~ '\v(c|r.?|!|t)' && getcmdwintype() == '' | checktime | endif",
+})
+
+
 
 --
 --
@@ -22,7 +32,6 @@ vim.opt.numberwidth = 4			        -- width of the line number column
 -- vim.opt.splitright = true
 -- vim.opt.swapfile = false
 -- vim.opt.termguicolors = true
--- vim.opt.updatetime = 300
 -- vim.opt.writebackup = false
 -- vim.opt.expandtab = true
 -- vim.opt.shiftwidth = 2
