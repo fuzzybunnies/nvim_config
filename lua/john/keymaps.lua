@@ -47,7 +47,7 @@ keymap("n", "<leader>e", ":NvimTreeToggle <cr>", opts)
 
 -- Visual
 -- do not remove copied text whenever pasting over other text
--- keymap("v", "p", '"_dP', opts)
+keymap("v", "p", '"_dP', opts)
 
 -- Telescope
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)

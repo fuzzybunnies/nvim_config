@@ -67,6 +67,7 @@ return packer.startup(function(use)
   -- -- use { "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" }
   -- -- use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
   -- -- use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
+  
   -- -- -- Colorschemes
   -- -- use { "folke/tokyonight.nvim" }
   -- -- use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
@@ -114,7 +115,7 @@ return packer.startup(function(use)
 
   -- -- added by me
   use { "akinsho/toggleterm.nvim" }
-  -- use { "lukas-reineke/indent-blankline.nvim" }
+  use { "lukas-reineke/indent-blankline.nvim" }
   -- use { "Shatur/neovim-session-manager" }
 
   -- Automatically set up your configuration after cloning packer.nvim
