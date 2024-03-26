@@ -53,8 +53,14 @@ return packer.startup(function(use)
 		require('Comment').setup()
 	end
   }
-  --
-  -- use { "windwp/nvim-autopairs" }  -- Autopairs, integrates with both cmp and treesitter
+  use {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = function()
+        require("nvim-autopairs").setup {}
+    end
+}
+
   -- -- use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "32d9627123321db65a4f158b72b757bcaef1a3f4" }
   use { "kyazdani42/nvim-web-devicons" }
   -- -- use { "akinsho/bufferline.nvim", commit = "83bf4dc7bff642e145c8b4547aa596803a8b4dc4" }
