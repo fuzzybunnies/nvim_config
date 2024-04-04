@@ -59,10 +59,14 @@ return packer.startup(function(use)
     config = function()
         require("nvim-autopairs").setup {}
     end
-}
-
-  -- -- use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "32d9627123321db65a4f158b72b757bcaef1a3f4" }
+  }
   use { "kyazdani42/nvim-web-devicons" }
+  use 'navarasu/onedark.nvim'
+
+  use { "williamboman/mason.nvim" }
+  use { "williamboman/mason-lspconfig.nvim" }
+  use { 'mhartington/formatter.nvim' }
+
   -- -- use { "akinsho/bufferline.nvim", commit = "83bf4dc7bff642e145c8b4547aa596803a8b4dc4" }
   -- -- use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
   -- use { "nvim-lualine/lualine.nvim",
@@ -77,7 +81,6 @@ return packer.startup(function(use)
   -- -- -- Colorschemes
   -- -- use { "folke/tokyonight.nvim" }
   -- -- use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
-  use 'navarasu/onedark.nvim'
 
   -- -- -- cmp plugins
   -- use { "hrsh7th/nvim-cmp" }         -- The completion plugin
@@ -93,8 +96,6 @@ return packer.startup(function(use)
 
   -- -- -- LSP
   -- -- -- use { "williamboman/nvim-lsp-installer", commit = "e9f13d7acaa60aff91c58b923002228668c8c9e6" } -- simple to use language server installer
-  use { "williamboman/mason.nvim" }
-  use { "williamboman/mason-lspconfig.nvim" }
   -- use { "neovim/nvim-lspconfig" }           -- enable LSP
   -- use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
   -- use { "RRethy/vim-illuminate" }
