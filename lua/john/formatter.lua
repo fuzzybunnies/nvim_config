@@ -41,6 +41,22 @@ require("formatter").setup({
 		json = {
 			require("formatter.filetypes.javascript").prettier,
 		},
+		ruby = {
+			function()
+				return {
+					exe = "rubocop",
+					args = {
+						"--fix-layout",
+						"--stdin",
+						util.escape_path(util.get_current_buffer_file_name()),
+						"--format",
+						"files",
+						"--stderr"
+					},
+					stdin = true,
+				}
+			end,
+		},
 
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
