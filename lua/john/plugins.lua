@@ -67,6 +67,7 @@ return packer.startup(function(use)
 	use({ "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim" })
 	use({ "neovim/nvim-lspconfig" })
 	use({ "mhartington/formatter.nvim" })
+	use({'christoomey/vim-tmux-navigator'})
 
 	-- -- use { "akinsho/bufferline.nvim", commit = "83bf4dc7bff642e145c8b4547aa596803a8b4dc4" }
 	-- -- use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
@@ -117,8 +118,6 @@ return packer.startup(function(use)
 	-- -- use { "rcarriga/nvim-dap-ui", commit = "1cd4764221c91686dcf4d6b62d7a7b2d112e0b13" }
 	-- -- use { "ravenxrz/DAPInstall.nvim", commit = "8798b4c36d33723e7bba6ed6e2c202f84bb300de" }
 
-	-- -- added by me
-	use({ "akinsho/toggleterm.nvim" })
 	use({ "lukas-reineke/indent-blankline.nvim" })
 	-- use { "Shatur/neovim-session-manager" }
 

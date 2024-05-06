@@ -7,7 +7,6 @@ require "john.keymaps"
 require "john.plugins"
 require "john.colorscheme"
 require "john.gitsigns"
-require "john.toggleterm"
 require "john.nvimtree"
 require "john.indent_blankline"
 
